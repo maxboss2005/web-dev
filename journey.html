@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB DEVELOPMENT
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="journey.html">Web Dev Journey</a>
+        </nav> 
+
+        <div class="container">
+            <h1 style="text-align: center ">
+                WEB DEVELOPMENT
+            </h1>
+
+            <h2>
+                Contents: 
+            </h2>
+
+            <h4>
+               <a href="#intro">
+                INTRODUCTION TO WEB DEVELOPMENT
+               </a>
+            </h4><br>
+
+            <h4>
+                <a href="#html">
+                HTML - STRUCTURE OF WEB PAGES
+                </a>
+            </h4><br>
+
+            <h4>
+               <a href="#css">
+                CSS - STYLING THE WEB
+               </a>
+            </h4><br>
+
+            <h4>
+               <a href="#java">
+                JAVA - MAKING PAGES INTERACTIVE
+               </a>
+            </h4><br>
+
+            <h4>
+                <a href="#form">
+                    FORMS AND INPUT
+                </a>
+            </h4><br>
+
+            <h4>
+                <a href="#layout">
+                    LAYOUT WITH FLEXBOX & GRID
+                </a>
+            </h4><br>
+
+            <h4>
+                <a href="#response">
+                    RESPONSIVE DESIGN & MEDIA QUERIES
+                </a>
+            </h4><br>
+
+            <h4>
+                <a href="#host">
+                    HOSTING AND DEPLOYMENT
+                </a>
+            </h4><br>
+
+            <h4>
+                <a href="#project">
+                    PROJECT: PERSONAL PORTFOLIO WEBSITE
+                </a>
+            </h4><br>
+
+
+
+            <p style="text-align: left; line-height: ;">
+                Before continuing, you must have a code editor on your pc.<br>
+                There are some practice after each lesson, so a code editor will be needed.<br>
+                Suggested editor: VS CODE.<br>
+                Link to download VS Code: 
+                <a href="https://code.visualstudio.com/Download">Visual Studio Code</a>
+            </p>
+
+            <h2 style="text-align: center; line-height: 3;" id="intro">
+             1.   INTRODUCTION TO WEB DEVELOPMENT
+            </h2>
+            <h4 style="text-align:left; line-height: 1;">
+                What is Web Development?
+            </h4>
+            <p style="line-height: 1;">
+                Web development is the process of creating websites or web applications that are accessed via the internet.
+            </p><br>
+
+            <h4>
+                Types of Web Development
+            </h4>
+            <p style="line-height: 2;">
+                1.  Front-end Development: Involves what the users see. (HTML, CSS, JAVASCRIPT) <br>
+            
+               2.  Back-end Development: Involves what powers the site behind the scenes. (Python, Node.js, PHP) <br>
+            
+            
+                3. Full-stack Development: A combination of both front-end and back-end development.<br>
+            </p><br>
+
+            <h4 style="line-height: 2;">
+                PRACTICE
+            </h4>
+            <p>
+                Open the code editor on your pc (Visual Studio Code preferred)<br>
+                Create a file called <i><u>intro.html</u></i>.<br>
+                Input code below. You can customize it.<br>
+                <!DOCTYPE html>
+
+                <!--To make the code copiable--> 
+                <pre><code id="html-code">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;
+                    My First Web Page
+                    &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;
+                    Hello World!
+                    &lt;/h1&gt;
+                    &lt;p&gt;
+                    I am learning web development.
+                    &lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+
+                <button onclick="copyCode()">Copy Code</button>
+
+                <script>
+                function copyCode() {
+                const code = document.getElementById("html-code").innerText;
+                navigator.clipboard.writeText(code);
+                alert("Code copied to clipboard!");
+                }
+                </script>
+
+
+
+
+
+            </p>
+
+            
+            
+                
+        </div>
+
+        <div class="container">
+            <h2 style="text-align: center; line-height: 3;" id="html">
+                2.  HTML - STRUCTURE OF WEB PAGES
+            </h2>
+            <h4>
+                HTML (HyperText Markup Language) is the skeleton of a webpage.
+            </h4><br>
+
+            <h4>
+                Basic Tags
+            </h4>
+            <p>
+                - < html >, < head >, < title >, < body >. <br>
+                - Headings: < h1 > to < h6 >.<br>
+                - Paragraphs: < p ><br>
+                - Links: < a href=" " ><br>
+                - Images: < img src=" " ><br>
+                - Lists: < ul >, < ol >, < il ><br>
+                - Line break: < br > <br>
+                - Bold (font-weight in css): < strong > or < b ><br>
+                  Italic (font-style in css): < em > or < i ><br>
+                  Underline (text-decoration in css): < u >
+            </p><br>
+
+            <h4 style="line-height: 2;">
+                PRACTICE
+            </h4>
+            <p>
+                Create a file called <i><u>structure.html</u></i><br>
+                Create a simple page about yourself using headings, images, and lists.
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 style="text-align: center; line-height: 3" id="css">
+                3.  CSS - STYLING THE WEB
+            </h2>
+
+            <h4>
+                CSS (Cascading Style Sheets) is used to design and layout web pages.
+            </h4><br>
+
+            <h4>
+                Ways to Add CSS:
+            </h4>
+            <p>
+                - Inline (style=" ")<br>
+                - Internal (< style > in the < head >)<br>
+                - External (style.css file)
+            </p><br>
+            
+            <h4>
+                Basic Properties
+            </h4>
+            <p>
+                Color, font-size, background-color, padding, margin, border.
+            </p><br>
+
+            <h4>
+                Practice:
+            </h4>
+            <p>
+                Create <i><u>style.css</u></i> and link it to your <i><u>structure.html</u></i> file.
+
+                <pre><code id="css-code">
+                    body {
+                        background-color: #f4f4f4;
+                        font-family: Arial, sans-serif;
+                        color: #333;
+                    }
+
+                    h1 {
+                        color: royalblue;
+                    }
+                </code></pre>
+                <button onclick="copyCode()">Copy Code</button>
+
+                <script>
+                function copyCode() {
+                const code = document.getElementById("css-code").innerText;
+                navigator.clipboard.writeText(code);
+                alert("Code copied to clipboard!");
+                }
+                </script>
+                
+            </p>
+
+
+        </div>
+
+        <div class="container">
+            <h2 style="text-align: center; line-height: 3" id="java">
+                4.  JAVA - MAKING PAGES INTERACTIVE
+            </h2>
+
+            <h4>
+                JavaScript is a programming language used to add interactivity (e.g clicking, animations, form validation).
+            </h4><br>
+
+            <h4>
+                Examples:
+            </h4>
+            <p>
+                - Change text on click.<br>
+                - Show/hide content.<br>
+                - Alert boxes.
+            </p><br>
+
+            <h4>
+                Practice
+            </h4>
+            <p>
+                Add this to your HTML file:
+
+                <pre><code style="text-align: left" id="java-code">
+&lt; button onclick="sayHello()"&gt;
+Click Me
+&lt; /button &gt;
+&lt; script &gt;
+function sayHello() {
+alert("Hello, User1");
+}
+&lt; /script &gt;
+                </code></pre>
+                <button onclick="copyCode()">Copy Code</button>
+
+                <script>
+                function copyCode() {
+                const code = document.getElementById("java-code").innerText;
+                navigator.clipboard.writeText(code);
+                alert("Code copied to clipboard!");
+                }
+                </script>
+
+            </p>
+  
+
+        </div>
+
+        <div class="container">
+            <h2 style="text-align: center; line-height: 3" id="form">
+                5.  FORMS AND INPUT
+            </h2>
+
+            <h4>
+                Forms let users submit data (contact, sign-up, feedback).
+            </h4><br>
+
+            <h4>
+                Common Form Tags:
+            </h4>
+            <p>
+                - < form >, < input >, < textarea >, < button >, < label >
+            </p><br>
+
+            <h4>
+                Practice:
+            </h4>
+            <p>
+                Create a file <i><u>form.html</u></i>
+                
+                <pre><code id="form-code">
+                    &lt; form &gt;
+                    &lt; label &gt; 
+                    Name: 
+                    &lt; /label &gt; &lt; br &gt;
+                    &lt; input type="text" required &gt; &lt; br &gt;
+
+                    &lt; label &gt;
+                    Email: 
+                    &lt; /label &gt; &lt; br &gt;
+
+                    &lt; input type="submit" value="Send" &gt;
+
+                    &lt; /form &gt;
+
+                </code></pre>
+                <button onclick="copyCode()">Copy Code</button>
+
+                <script>
+                function copyCode() {
+                const code = document.getElementById("form-code").innerText;
+                navigator.clipboard.writeText(code);
+                alert("Code copied to clipboard!");
+                }
+                </script>
+            </p>
+        </div>
+
+        <div class="container">
+            <h2 style="text-align: center; line-height: 3" id="layout">
+                6.  LAYOUT WITH FLEXBOX & GRID
+            </h2>
+
+            <h4>
+                Modern layout techniques using CSS:
+            </h4>
+            <p>
+                - <b> Flexbox </b>: One-dimensional layout (horizontal or vertical)<br>
+                - <b> Grid </b>: Two-dimensional  layout (rows and columns)
+            </p><br>
+
+            <h4>
+                Practice:
+            </h4>
+            <p>
+                Try this Flexbox layout:
+
+                <pre><code id="layout-code">
+                    &lt; div <span style="color: red"> style </span>="display: flex; gap:
+                     10px;"&gt;
+                        &lt; div style="background: lightblue;
+                     padding: 20px;"&gt; Box 1 &lt; /div &gt;
+                        &lt; div style="background: lightcoral;
+                    padding: 20px;"&gt; Box 1 &lt; /div &gt;
+                    &lt;/div &gt;
+
+                </code></pre>
+                <button onclick="copyCode()">Copy Code</button>
+
+                <script>
+                function copyCode() {
+                const code = document.getElementById("layout-code").innerText;
+                navigator.clipboard.writeText(code);
+                alert("Code copied to clipboard!");
+                }
+                </script>
+                
+            </p>
+        </div>
+
+            <div class="container">
+                <h2 style="text-align: center; line-height: 3" id="response">
+                    7.  RESPONSIVE DESIGN & MEDIA QUERIES
+                </h2>
+                <h4>
+                    Make your website look good on phones and tablets using media queries.
+                </h4><br>
+
+                <h4>
+                    Practice:
+                </h4>
+
+                <p>
+                    <pre><code id="response-code">
+                        @media (max-width: 600px) {
+                            body {
+                                background-color: lightyellow;
+                            }
+                        }
+                    </code></pre>
+                    <button onclick="copyCode()">Copy Code</button>
+
+                <script>
+                function copyCode() {
+                const code = document.getElementById("response-code").innerText;
+                navigator.clipboard.writeText(code);
+                alert("Code copied to clipboard!");
+                }
+                </script>
+                </p>
+
+
+            </div>
+
+            <div class="container">
+                <h2 style="text-align: center; line-height: 3" id="host">
+                    8.  HOSTING AND DEPLOYMENT
+                </h2>
+                <h4>
+                    You can host your site on: 
+                </h4>
+                <p>
+                    <a href="https://github.com"> Github Pages (free)</a><br>
+                    <a href="https://www.netlify.com"> Netlify </a><br>
+                    <a href="https://render.com"> Render </a><br>
+                    <a href="https://vercel.com"> Vercel </a><br>
+                </p>
+            </div>
+
+            <div class="container">
+                <h2>
+                    PROJECT: PERSONAL PORTFOLIO WEBSITE
+                </h2>
+
+                <h4>
+                    The website should include:
+                </h4>
+                <p>
+                    - Home<br>
+                    - About<br>
+                    - Skills<br>
+                    - Projects<br>
+                    - Contact form
+                </p>
+            </div>
+
+            <div class="container">
+
+                <h2>
+                    If you made it to the end, Congratulations, you have completed a little of web development. Yes, there are lot to learn still.<br>
+                    This is just the introduction to it. It prepares you for what is to come.
+                </h2>
+
+                <footer>
+                    806
+                </footer>
+            </div>
+
+
+
+        
+
+    </body>
+</html>
