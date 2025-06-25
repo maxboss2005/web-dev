@@ -1,1 +1,1 @@
-This site basically introduces web development for beginners.
+This site basically introduces the concept web development for beginners.
